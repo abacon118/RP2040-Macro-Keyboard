@@ -15,6 +15,7 @@ import array as arr
 keyboard = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(keyboard)
 
+% Define the input pins
 io0 = digitalio.DigitalInOut(board.GP0)
 io1 = digitalio.DigitalInOut(board.GP1)
 io2 = digitalio.DigitalInOut(board.GP2)
@@ -43,13 +44,28 @@ io1.direction = digitalio.Direction.INPUT
 red.value = True
 green.value = True
 blue.value = True
-io0.pull = Pull.UP
+io0.pull = Pull.UP %define buttons as pull ups
 io1.pull = Pull.UP
+io2.pull = Pull.UP
+io3.pull = Pull.UP
+io4.pull = Pull.UP
+io5.pull = Pull.UP
+io6.pull = Pull.UP
+io7.pull = Pull.UP
+io8.pull = Pull.UP
+io9.pull = Pull.UP
+io10.pull = Pull.UP
+io11.pull = Pull.UP
+io12.pull = Pull.UP
+io13.pull = Pull.UP
+io14.pull = Pull.UP
+io15.pull = Pull.UP
 
-with open('macros.txt', 'r') as file:
+
+with open('macros.txt', 'r') as file: %Parse macros.txt for each line
     for line in file:
         if '00:' in line:
-            text0 = line.split('00:')[1].strip()
+            text0 = line.split('00:')[1].strip()  % Sets text0 equal to the first line of the fule after 00:
         if '01:' in line:
             text1 = line.split('01:')[1].strip()
         if '02:' in line:
@@ -83,7 +99,7 @@ with open('macros.txt', 'r') as file:
 
 while True:
     
-    if not io0.value:
+    if not io0.value: % if io0.value is low, then type text0
         layout.write(text0)
     if not io1.value:
         layout.write(text1)
