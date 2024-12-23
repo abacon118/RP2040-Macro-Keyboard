@@ -1,5 +1,5 @@
 # RP2040-Macro-Keyboard
-Poor Man's Macros
+This is designed to type commonly used text at the press of a button.  For example, if you type "thank you" 20 times a day, you could make that a button.  Working in IT, I can type the same server names or IP addresses multiple times in a span of a few minutes.  This allows me to type those server names at the press of one button.
 
 ![Finished PCB](/Photos/PXL_20241223_024739775.jpg)
 
