@@ -1,6 +1,8 @@
 # RP2040-Macro-Keyboard
 Poor Man's Macros
 
+![Finished PCB](/Photos/PXL_20241223_024739775.jpg)
+
 ## RP2040 Files/Prep
 1. [Install Circuit Python on your RP2040](https://learn.adafruit.com/adafruit-feather-rp2040-pico/circuitpython)
 2. Copy [lib](lib) to lib on your RP2040
