@@ -1,4 +1,8 @@
-%Andrew Bowman 2024
+# Andrew Bowman 2024
+# RP2040 Macro Keyboard V1
+
+# You must have macros.txt on your CIRCUITPY drive for this to work.
+
 import time
 import board
 import digitalio
@@ -15,7 +19,7 @@ import array as arr
 keyboard = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(keyboard)
 
-% Define the input pins
+# Define the input pins
 io0 = digitalio.DigitalInOut(board.GP0)
 io1 = digitalio.DigitalInOut(board.GP1)
 io2 = digitalio.DigitalInOut(board.GP2)
@@ -33,18 +37,7 @@ io13 = digitalio.DigitalInOut(board.GP13)
 io14 = digitalio.DigitalInOut(board.GP14)
 io15 = digitalio.DigitalInOut(board.GP15)
 
-red = digitalio.DigitalInOut(board.GP29)
-red.direction = digitalio.Direction.OUTPUT
-green = digitalio.DigitalInOut(board.GP28)
-green.direction = digitalio.Direction.OUTPUT
-blue = digitalio.DigitalInOut(board.GP27)
-blue.direction = digitalio.Direction.OUTPUT
-io0.direction = digitalio.Direction.INPUT
-io1.direction = digitalio.Direction.INPUT
-red.value = True
-green.value = True
-blue.value = True
-io0.pull = Pull.UP %define buttons as pull ups
+io0.pull = Pull.UP # define buttons as pull ups
 io1.pull = Pull.UP
 io2.pull = Pull.UP
 io3.pull = Pull.UP
@@ -61,11 +54,10 @@ io13.pull = Pull.UP
 io14.pull = Pull.UP
 io15.pull = Pull.UP
 
-
-with open('macros.txt', 'r') as file: %Parse macros.txt for each line
+with open('macros.txt', 'r') as file: # Parse macros.txt for each line
     for line in file:
         if '00:' in line:
-            text0 = line.split('00:')[1].strip()  % Sets text0 equal to the first line of the fule after 00:
+            text0 = line.split('00:')[1].strip()  # Sets text0 equal to the first line of the fule after 00:
         if '01:' in line:
             text1 = line.split('01:')[1].strip()
         if '02:' in line:
@@ -99,7 +91,7 @@ with open('macros.txt', 'r') as file: %Parse macros.txt for each line
 
 while True:
     
-    if not io0.value: % if io0.value is low, then type text0
+    if not io0.value: # if io0.value is low, then type text0
         layout.write(text0)
     if not io1.value:
         layout.write(text1)
@@ -134,3 +126,4 @@ while True:
         
     keyboard.release_all()
     time.sleep(0.1);
+
