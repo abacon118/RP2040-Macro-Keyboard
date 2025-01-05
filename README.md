@@ -25,7 +25,10 @@ This is designed to type commonly used text at the press of a button.  For examp
 16x [12mmx12mm Buttons](https://www.aliexpress.us/item/3256805129033755.html?spm=a2g0o.order_list.order_list_main.10.27911802MaLXVM&gatewayAdapt=glo2usa) \
 16x [Button Caps (optional)](/STLs/12x12mm_button.stl) \
 1x [PCB Bumper (optional)](/STLs/Bumper.stl) \
-1x [EC11 Rotary Encoder](https://www.aliexpress.us/item/3256807457768762.html?spm=a2g0o.order_list.order_list_main.5.59f61802S1nYN4&gatewayAdapt=glo2usa)
+Rotary Encoder for Media Control (Optional)\
+1x [EC11 Rotary Encoder](https://www.aliexpress.us/item/3256807457768762.html?spm=a2g0o.order_list.order_list_main.5.59f61802S1nYN4&gatewayAdapt=glo2usa) \
+2x 10k Ohm 0603 resistors \
+1x 10k Ohm through hole resistor
 
 ![Schematic](/Fritzing/PoorManMacros_12mm_switch_IndividualPins_bb.png)
 
@@ -33,6 +36,14 @@ This is designed to type commonly used text at the press of a button.  For examp
 ![PCB](Fritzing/PoorManMacros_12mm_switch_IndividualPins_pcb.png)
 
 ## Rotary Encoder/Media Control
+
+As a second ideration of the design, a rotary encoder was added  to allow media control (pause/play, volume up/down, next/last song).
+
+A 10k Ohm resistor is needed between GND and Pin 26 as shown below for the button to function correctly.
+
+![Finished PCB](RotaryEncoder_MediaControl/Images/RP2040Keyboard_Rotary.jpg)
+![Rotary Encoder Schematic](RotaryEncoder_MediaControl/Images/PoorManMacros_12mm_switch_RotaryEncoder_bb.jpg)
+![Rotary Encoder PCB](RotaryEncoder_MediaControl/Images/PoorManMacros_12mm_switch_RotaryEncoder_pcb.jpg)
 
 
 
