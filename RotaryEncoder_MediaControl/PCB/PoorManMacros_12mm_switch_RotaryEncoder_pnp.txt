@@ -1,0 +1,58 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=PoorManMacros_12mm_switch_RotaryEncoder
+*Date=00:58:43
+*CreatedBy=Fritzing 0.9.10b.2022-07-01.CD-2134-0-40d23c29
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;0603-res;28.6763;-28.675;0;Top;Z9
+2;;;15.1264;-54.0749;0;Bottom;Via1
+3;;tactile-pth-12mm;36.8165;-54.0349;0;Bottom;S17
+4;;0603-res;64.2363;-59.155;0;Top;Z3
+5;;tactile-pth-12mm;90.1565;-8.31491;0;Bottom;S32
+6;;0603-res;82.0163;-28.675;0;Top;Z12
+7;;tactile-pth-12mm;36.8165;-38.7949;0;Bottom;S21
+8;;0603-res;28.6763;-43.915;0;Top;Z5
+9;;tactile-pth-12mm;36.8165;-8.31491;0;Bottom;S29
+10;;0603-res;64.2363;-43.915;0;Top;Z7
+11;;tactile-pth-12mm;54.5965;-38.7949;0;Bottom;S22
+12;;0603-res;46.4563;-43.915;0;Top;Z6
+13;;tactile-pth-12mm;72.3765;-8.31491;0;Bottom;S31
+14;;0603-res;28.6763;-13.435;0;Top;Z13
+15;;;14.7664;-1.18322;0;Bottom;TXT1
+16;;0603-res;20.2064;-9.20494;90;Top;Z17
+17;;tactile-pth-12mm;36.8165;-23.5549;0;Bottom;S25
+18;;;22.7464;-13.4349;0;Bottom;Via6
+19;;0603-res;82.0163;-43.915;0;Top;Z8
+20;;0603-res;22.7464;-9.20494;90;Top;Z18
+21;;tactile-pth-12mm;90.1565;-23.5549;0;Bottom;S28
+22;;tactile-pth-12mm;90.176;-38.7822;0;Bottom;S24
+23;;tactile-pth-12mm;54.5965;-23.5549;0;Bottom;S26
+24;;0603-res;46.4563;-28.675;0;Top;Z10
+25;;;14.911;-3.43275;0;Bottom;TXT1
+26;;;25.2864;-18.5149;0;Bottom;Via5
+27;;0603-res;64.2363;-13.435;0;Top;Z15
+28;;THT;12.5542;-15.3431;0;Bottom;RE1
+29;;tactile-pth-12mm;90.1565;-54.0349;0;Bottom;S20
+30;;tactile-pth-12mm;72.3765;-23.5549;0;Bottom;S27
+31;;0603-res;82.0163;-59.155;0;Top;Z4
+32;;;12.9357;-5.39391;0;Bottom;TXT1
+33;;tactile-pth-12mm;54.5965;-54.0349;0;Bottom;S18
+34;;0603-res;28.6763;-59.155;0;Top;Z1
+35;;tactile-pth-12mm;54.5965;-8.31491;0;Bottom;S30
+36;;0603-res;82.0163;-13.435;0;Top;Z16
+37;;0603-res;64.2363;-28.675;0;Top;Z11
+38;;THT;15.1108;-49.589;0;Bottom;A1
+39;;0603-res;46.4563;-13.435;0;Top;Z14
+40;;0603-res;46.4563;-59.155;0;Top;Z2
+41;;tactile-pth-12mm;72.3765;-38.7949;0;Bottom;S23
+42;;tactile-pth-12mm;72.3765;-54.0349;0;Bottom;S19
+43;;;20.2064;-26.1349;0;Bottom;Via2

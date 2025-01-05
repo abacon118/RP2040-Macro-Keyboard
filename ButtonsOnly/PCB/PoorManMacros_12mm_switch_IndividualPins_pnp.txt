@@ -1,0 +1,50 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=PoorManMacros_12mm_switch_IndividualPins
+*Date=18:25:06
+*CreatedBy=Fritzing 0.9.10b.2022-07-01.CD-2134-0-40d23c29
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;0603-res;45.0815;-58.38;0;Top;Z2
+2;;0603-res;27.3015;-27.9;0;Top;Z9
+3;;tactile-pth-12mm;71.0017;-38.0199;0;Bottom;S23
+4;;tactile-pth-12mm;71.0017;-22.7799;0;Bottom;S27
+5;;tactile-pth-12mm;71.0017;-7.53988;0;Bottom;S31
+6;;tactile-pth-12mm;53.2217;-53.2599;0;Bottom;S18
+7;;tactile-pth-12mm;35.4417;-38.0199;0;Bottom;S21
+8;;0603-res;80.6415;-12.66;0;Top;Z16
+9;;0603-res;62.8615;-27.9;0;Top;Z11
+10;;tactile-pth-12mm;53.2217;-7.53988;0;Bottom;S30
+11;;;12.757;-2.23344;0;Bottom;TXT1
+12;;0603-res;45.0815;-43.14;0;Top;Z6
+13;;0603-res;80.6415;-43.14;0;Top;Z8
+14;;;14.2892;-5.30793;0;Bottom;TXT1
+15;;0603-res;27.3015;-43.14;0;Top;Z5
+16;;0603-res;45.0815;-12.66;0;Top;Z14
+17;;0603-res;62.8615;-58.38;0;Top;Z3
+18;;0603-res;62.8615;-12.66;0;Top;Z15
+19;;tactile-pth-12mm;88.7817;-53.2599;0;Bottom;S20
+20;;tactile-pth-12mm;35.4417;-53.2599;0;Bottom;S17
+21;;tactile-pth-12mm;71.0017;-53.2599;0;Bottom;S19
+22;;tactile-pth-12mm;53.2217;-22.7799;0;Bottom;S26
+23;;tactile-pth-12mm;35.4417;-7.53988;0;Bottom;S29
+24;;0603-res;80.6415;-58.38;0;Top;Z4
+25;;tactile-pth-12mm;53.2217;-38.0199;0;Bottom;S22
+26;;0603-res;27.3015;-58.38;0;Top;Z1
+27;;0603-res;80.6415;-27.9;0;Top;Z12
+28;;tactile-pth-12mm;88.7817;-7.53988;0;Bottom;S32
+29;;0603-res;27.3015;-12.66;0;Top;Z13
+30;;tactile-pth-12mm;35.4417;-22.7799;0;Bottom;S25
+31;;tactile-pth-12mm;88.7817;-22.7799;0;Bottom;S28
+32;;tactile-pth-12mm;88.8011;-38.0072;0;Bottom;S24
+33;;0603-res;62.8615;-43.14;0;Top;Z7
+34;;0603-res;45.0815;-27.9;0;Top;Z10
+35;;THT;11.1959;-48.8141;0;Bottom;A1
