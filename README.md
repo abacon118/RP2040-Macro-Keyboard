@@ -54,7 +54,6 @@ pressright:SCAN_NEXT_TRACK
 pressleft:SCAN_PREVIOUS_TRACK
 ```
 
-![Finished PCB](RotaryEncoder_MediaControl/Images/RP2040Keyboard_Rotary.jpg)
 ![Rotary Encoder Schematic](RotaryEncoder_MediaControl/Images/PoorManMacros_12mm_switch_RotaryEncoder_bb.jpg)
 ![Rotary Encoder PCB](RotaryEncoder_MediaControl/Images/PoorManMacros_12mm_switch_RotaryEncoder_pcb.jpg)
 
