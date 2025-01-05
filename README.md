@@ -31,7 +31,9 @@ This project is written in Adafruit's Circuit python and relies on the [adafruit
 Rotary Encoder for Media Control (Optional)\
 1x [EC11 Rotary Encoder](https://www.aliexpress.us/item/3256807457768762.html?spm=a2g0o.order_list.order_list_main.5.59f61802S1nYN4&gatewayAdapt=glo2usa) \
 2x 10k Ohm 0603 resistors \
-1x 10k Ohm through hole resistor
+1x 10k Ohm through hole resistor \
+
+Button Setup ![Button Setup](ButtonsOnly/Images/Button.png)\
 
 ![Schematic](/ButtonsOnly/Images/PoorManMacros_12mm_switch_IndividualPins_bb.png)
 
