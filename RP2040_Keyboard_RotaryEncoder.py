@@ -70,6 +70,15 @@ DEBOUNCE_TIME = 0.2 # seconds
 button_state = False
 double_press_time = 0.4
 
+consumer_control_map = { #Consumer Control map for rotary encoder
+    "MUTE": ConsumerControlCode.MUTE,
+    "PLAY_PAUSE": ConsumerControlCode.PLAY_PAUSE,
+    "VOLUME_INCREMENT": ConsumerControlCode.VOLUME_INCREMENT,
+    "VOLUME_DECREMENT": ConsumerControlCode.VOLUME_DECREMENT,
+    "SCAN_NEXT_TRACK": ConsumerControlCode.SCAN_NEXT_TRACK,
+    "SCAN_PREVIOUS_TRACK": ConsumerControlCode.SCAN_PREVIOUS_TRACK
+}
+
 with open('macros.txt', 'r') as file: # Parse macros.txt for each line
     for line in file:
         if '00:' in line:
@@ -104,6 +113,24 @@ with open('macros.txt', 'r') as file: # Parse macros.txt for each line
             text14 = line.split('14:')[1].strip()
         if '15:' in line:
             text15 = line.split('15:')[1].strip()
+        if 'press1:' in line:
+            press = line.split('press1:')[1].strip()
+            press1 = consumer_control_map.get(press)
+        if 'doublepress:' in line:
+            press = line.split('doublepress:')[1].strip()
+            doublepress = consumer_control_map.get(press)
+        if 'right1:' in line:
+            press = line.split('right1:')[1].strip()
+            right = consumer_control_map.get(press) 
+        if 'left1:' in line:
+            press = line.split('left1:')[1].strip()
+            left = consumer_control_map.get(press)
+        if 'pressright:' in line:
+            press = line.split('pressright:')[1].strip()
+            pressright = consumer_control_map.get(press)
+        if 'pressleft:' in line:
+            press = line.split('pressleft:')[1].strip()
+            pressleft = consumer_control_map.get(press)
 
 while True:
     if not io0.value: # if io0.value is low, then type text0
@@ -149,22 +176,20 @@ while True:
     
     if position_change > 0 and enc_button_state == None:
         for _ in range(position_change):
-            cc.send(ConsumerControlCode.VOLUME_INCREMENT)
+            cc.send(pressright)
         print(current_position)
     elif position_change < 0 and enc_button_state == None:
         for _ in range(-position_change):
-            cc.send(ConsumerControlCode.VOLUME_DECREMENT)
+            cc.send(pressleft)
         print(current_position)
     elif position_change > 0 and enc_button_state == "pressed":
-        print("Next Track")
         for _ in range(position_change):
-            cc.send(ConsumerControlCode.SCAN_NEXT_TRACK)
+            cc.send(left)
         print(current_position)
         time.sleep(2)
     elif position_change < 0 and enc_button_state == "pressed":
-        print("Prev Track")
         for _ in range(-position_change):
-            cc.send(ConsumerControlCode.SCAN_PREVIOUS_TRACK)
+            cc.send(right)
         print(current_position)
         time.sleep(2)
 
@@ -182,14 +207,15 @@ while True:
         button_state = False
         
     if press_count == 1 and current_time - last_press_time >= double_press_time:
-        cc.send(ConsumerControlCode.PLAY_PAUSE)
+        cc.send(press1)
         press_count = 0
     elif press_count == 2:
-        cc.send(ConsumerControlCode.MUTE)
+        cc.send(doublepress)
         press_count = 0
         
     last_position = current_position
           
     keyboard.release_all()
     time.sleep(0.05);
+
 
