@@ -1,7 +1,7 @@
 # RP2040-Macro-Keyboard
 This is designed to type commonly used text at the press of a button.  For example, if you type "thank you" 20 times a day, you could make that a button.  Working in IT, I can type the same server names or IP addresses multiple times in a span of a few minutes.  This allows me to type those server names at the press of one button.
 
-![Finished PCB](/Photos/PXL_20241223_024739775.jpg)
+![Finished PCB](RotaryEncoder_MediaControl/Images/RP2040Keyboard_Rotary.jpg)
 
 ## About the code
 This project is written in Adafruit's Circuit python and relies on the [adafruit_hid library](https://docs.circuitpython.org/projects/hid/en/latest/api.html).  The button actions are defined in a text file called [macros.txt](ButtonsOnly/macros.txt).
@@ -33,10 +33,10 @@ Rotary Encoder for Media Control (Optional)\
 2x 10k Ohm 0603 resistors \
 1x 10k Ohm through hole resistor
 
-![Schematic](/Fritzing/PoorManMacros_12mm_switch_IndividualPins_bb.png)
+![Schematic](/ButtonsOnly/Images/PoorManMacros_12mm_switch_IndividualPins_bb.png)
 
 
-![PCB](Fritzing/PoorManMacros_12mm_switch_IndividualPins_pcb.png)
+![PCB](ButtonsOnly/Images/PoorManMacros_12mm_switch_IndividualPins_pcb.png)
 
 ## Rotary Encoder/Media Control
 
